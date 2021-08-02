@@ -1,13 +1,13 @@
-let archivoTareas = require('./funcionesDeTareas');
+let funcionesDeTareas = require('./funcionesDeTareas');
 
 let argumentosFiltro = process.argv[2];
 
 switch (argumentosFiltro) {
     case 'listar':
         console.log('Listado de tareas')
-        let tareas = archivoTareas.leerJSON;
+        let tareas = funcionesDeTareas.leerJSON();
         for (let i = 0; i < tareas.length; i++) {
-            console.log(i + ', ' + tareas[i].tiulo + ' - ' + tareas[i].estado);
+            console.log(i + ', ' + tareas[i].titulo + ' - ' + tareas[i].estado);
         }
         break;
 

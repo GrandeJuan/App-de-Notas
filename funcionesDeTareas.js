@@ -1,9 +1,9 @@
 const fs = require('fs');
 
 const archivoTareas = {
-    archivo: 'tareas.json',
+    archivo: './tareas.json',
     leerJSON: function (){
-        const arregloEnJSON = fs.readFileSync('./tareas.json', 'utf-8');
+        const arregloEnJSON = fs.readFileSync(this.archivo, 'utf-8');
         return JSON.parse(arregloEnJSON);
     }
 }
