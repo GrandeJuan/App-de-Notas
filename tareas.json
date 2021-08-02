@@ -1,0 +1,13 @@
+[{
+    "titulo": "Aprender Json",
+    "estado": "progreso"
+}, {
+    "titulo": "Aprender JavaScript",
+    "estado": "progreso"
+}, {
+    "titulo": "Lavar la ropa",
+    "estado": "terminada"
+}, {
+    "titulo": "Aprender Pyhton",
+    "estado": "pendiente"
+}]
