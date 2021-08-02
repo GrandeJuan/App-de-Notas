@@ -7,7 +7,7 @@ switch (argumentosFiltro) {
         console.log('Listado de tareas')
         let tareas = funcionesDeTareas.leerJSON();
         for (let i = 0; i < tareas.length; i++) {
-            console.log(i + ', ' + tareas[i].titulo + ' - ' + tareas[i].estado);
+            console.log(tareas[i].titulo + ' - ' + tareas[i].estado);
         }
         break;
 
